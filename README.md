@@ -1,51 +1,55 @@
-# Portfolio 2026 — Dev Bajaniya
+# Portfolio_2026
 
-A single-page, dark-themed cybersecurity portfolio for **Dev Bajaniya**. Built as a
-self-contained static site (one `index.html` with inline CSS and JavaScript) — no build
-step, no dependencies, no framework.
+Personal portfolio website for **Dev Bajaniya** — a cybersecurity student and enthusiast.
+It's a single-page, dark-themed site built as one self-contained `index.html` file
+(inline CSS and vanilla JavaScript, no build step or dependencies).
 
-![Portfolio screenshot](./image.png)
+![Portfolio screenshot](image.png)
 
 ## Sections
 
-- **Hero** — intro with animated typing effect and a 3D "core" visual
+- **Hero** — intro with an animated typing effect and a decorative 3D core
 - **About** — background and focus areas
-- **Experience** — internships and engagements
+- **Experience** — internships and roles
 - **Projects** — selected security tools and lab work
 - **Certifications** — earned credentials
 - **Skills** — tools and technologies
 - **Education** — academic timeline
-- **Contact** — links to GitHub, LinkedIn, and email
+- **Contact** — links to reach out
 
 ## Tech
 
-- Plain HTML5, CSS3 (custom properties, glassmorphism), and vanilla JavaScript
-- Fully responsive, mobile-first layout
-- Accessibility-conscious: ARIA attributes, `:focus-visible` styles, and semantic markup
-- Respects `prefers-reduced-motion` — animations disable gracefully
-- Progressive enhancement: content renders without JavaScript
+- Plain HTML, CSS custom properties, and vanilla JavaScript — no frameworks or build tooling
+- Progressive enhancement: content renders without JS; animations layer on via a `.js-ready` flag
+- Accessibility: ARIA labels, `:focus-visible` styles, and `prefers-reduced-motion` support
+- SEO/meta: Open Graph tags, `theme-color`, and an inline SVG favicon
 
-## Running locally
+## Run locally
 
-No build step is required. Open the file directly:
+No build step is required. Either:
 
 ```bash
-# Option 1: open the file in your browser
+# open the file directly
 open index.html
-
-# Option 2: serve it locally (recommended so in-page anchors behave)
-python3 -m http.server 8000
-# then visit http://localhost:8000
 ```
 
-## Deploying
+or serve it with any static server, for example:
 
-Because it's a static site, you can host it anywhere:
+```bash
+npx serve .
+# or
+python3 -m http.server
+```
 
-- **Vercel:** import the repo and deploy — no configuration needed
-- **GitHub Pages:** enable Pages on the `main` branch (root)
-- **Netlify:** drag-and-drop the folder or connect the repo
+Then visit the printed local URL.
+
+## Deploy
+
+Because it's fully static, you can host it anywhere that serves static files
+(Vercel, GitHub Pages, Netlify, etc.). On Vercel, importing the repo and
+deploying with no configuration is enough.
 
 ## License
 
-Personal portfolio project. All rights reserved unless stated otherwise.
+Personal project. Feel free to draw inspiration, but please don't republish the
+content (name, experience, and credentials) as your own.
