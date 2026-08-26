@@ -4,6 +4,8 @@ Personal portfolio website for **Dev Bajaniya** — a cybersecurity student and 
 It's a single-page, dark-themed site built as one self-contained `index.html` file
 (inline CSS and vanilla JavaScript, no build step or dependencies).
 
+link -> "https://v0-devbajaniya845.vercel.app/portfolio.html"
+
 ![Portfolio screenshot](image.png)
 
 ## Sections
